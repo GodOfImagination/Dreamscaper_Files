@@ -227,7 +227,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ceb7a2ccd55cf406b9b31deadc0be79d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -492,7 +492,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ceb7a2ccd55cf406b9b31deadc0be79d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -894,7 +894,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ceb7a2ccd55cf406b9b31deadc0be79d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -952,6 +952,7 @@ GameObject:
   - component: {fileID: 785857919}
   - component: {fileID: 785857918}
   - component: {fileID: 785857917}
+  - component: {fileID: 785857922}
   m_Layer: 0
   m_Name: Ramp2
   m_TagString: Untagged
@@ -1072,6 +1073,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &785857922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785857916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd776f9d090d74c00a2ae54dce3af3f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &928978917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,6 +1293,7 @@ GameObject:
   - component: {fileID: 1019095137}
   - component: {fileID: 1019095136}
   - component: {fileID: 1019095135}
+  - component: {fileID: 1019095140}
   m_Layer: 0
   m_Name: Ramp1
   m_TagString: Untagged
@@ -1400,6 +1414,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1019095140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019095134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd776f9d090d74c00a2ae54dce3af3f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1160659076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1439,7 @@ GameObject:
   - component: {fileID: 1160659079}
   - component: {fileID: 1160659078}
   - component: {fileID: 1160659077}
+  - component: {fileID: 1160659082}
   m_Layer: 0
   m_Name: Ramp3
   m_TagString: Untagged
@@ -1533,6 +1560,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1160659082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160659076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd776f9d090d74c00a2ae54dce3af3f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251208775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,7 +2086,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ceb7a2ccd55cf406b9b31deadc0be79d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
