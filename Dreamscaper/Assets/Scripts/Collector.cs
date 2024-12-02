@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Collector : MonoBehaviour
 {
+	public string Block;
 	public GameObject Bridge;
 
 	private void Start()
@@ -13,7 +14,7 @@ public class Collector : MonoBehaviour
 
 	void OnCollisionEnter(Collision other)
 	{
-		if (other.gameObject.name == "Block")
+		if (other.gameObject.name == Block)
 		{
 			Bridge.SetActive(true);
 		}

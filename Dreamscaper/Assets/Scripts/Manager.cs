@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
+    public GameObject TitleScreen;
+    public GameObject SelectionScreen;
+
     private bool IsLocked = false;
 
     private void Update()
@@ -22,6 +25,12 @@ public class Manager : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
             }
         }
+    }
+
+    public void ButtonPlay()
+    {
+        TitleScreen.SetActive(false);
+        SelectionScreen.SetActive(true);
     }
 
     public void LoadScene(int Number)
