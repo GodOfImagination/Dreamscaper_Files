@@ -3,10 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
-    public GameObject TitleScreen;
-    public GameObject SelectionScreen;
+    public GameObject ScreenTitle;
+    public GameObject ScreenSelection;
+    public GameObject ScreenPause;
 
     private bool IsLocked = false;
+    private bool IsPaused = false;
 
     private void Update()
     {
@@ -23,12 +25,26 @@ public class Manager : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (IsPaused)
+            {
+                IsPaused = false;
+                ScreenPause.SetActive(false);
+            }
+            else
+            {
+                IsPaused = true;
+                ScreenPause.SetActive(true);
+            }
+        }
     }
 
     public void ButtonPlay()
     {
-        TitleScreen.SetActive(false);
-        SelectionScreen.SetActive(true);
+        ScreenTitle.SetActive(false);
+        ScreenSelection.SetActive(true);
     }
 
     public void LoadScene(int Number)
