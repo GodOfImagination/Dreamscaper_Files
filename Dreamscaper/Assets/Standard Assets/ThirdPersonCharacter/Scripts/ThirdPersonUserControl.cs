@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.Characters.ThirdPerson;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -59,8 +56,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_Move = v*Vector3.forward + h*Vector3.right;
             }
 #if !MOBILE_INPUT
-			// Walk speed multiplier.
-	        if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
+            // Walk speed multiplier.
+            if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 1;
+            else m_Move *= 0.5f;
 #endif
 
             // Pass all parameters to the character control script.
